@@ -5,7 +5,7 @@
 
 #include "Algorithms/mergesort.h"
 
-float MergeSortPerf(int arr[], const int size, int sortedArray[]) {
+float MergeSortPerf(const int arr[], const int size, const int sortedArray[]) {
 
     int arrCopy[size];
 
@@ -15,7 +15,7 @@ float MergeSortPerf(int arr[], const int size, int sortedArray[]) {
 
     std::cout << "Running Merge Sort Algorithm Performance" << std::endl;
     std::cout << "Time Complexity : O(N log N)" << std::endl;
-    std::cout << "Space Co"
+    std::cout << "Space Complexity : O(N)";
 
     const std::chrono::time_point start = std::chrono::system_clock::now();
 
