@@ -5,7 +5,7 @@
 
 #include "Algorithms/mergesort.h"
 
-float MergeSortPerf(int arr[], const int size, int sortedArray[]) {
+float MergeSortPerf(const int arr[], const int size, const int sortedArray[]) {
 
     int arrCopy[size];
 
@@ -15,7 +15,7 @@ float MergeSortPerf(int arr[], const int size, int sortedArray[]) {
 
     std::cout << "Running Merge Sort Algorithm Performance" << std::endl;
     std::cout << "Time Complexity : O(N log N)" << std::endl;
-    std::cout << "Space Co"
+    std::cout << "Space Complexity : O(N)" << std::endl;
 
     const std::chrono::time_point start = std::chrono::system_clock::now();
 
@@ -37,11 +37,10 @@ float MergeSortPerf(int arr[], const int size, int sortedArray[]) {
 
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
     std::linear_congruential_engine<std::uint_fast32_t, 48271, 0, 2147483647> generator;
     std::uniform_int_distribution<int> distribution(0, 100);
 
-    constexpr int size = 100;
+    constexpr int size = 10000;
     int arr[size];
     int sortedArray[size];
 

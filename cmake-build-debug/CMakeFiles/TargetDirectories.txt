@@ -1,3 +1,0 @@
-D:/projects/SimpleSortingAlgorithmBenchmark/cmake-build-debug/CMakeFiles/SimpleSortingAlgorithmBenchmark.dir
-D:/projects/SimpleSortingAlgorithmBenchmark/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/projects/SimpleSortingAlgorithmBenchmark/cmake-build-debug/CMakeFiles/rebuild_cache.dir
