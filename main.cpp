@@ -1,46 +1,15 @@
 #include <iostream>
 #include <random>
-#include <chrono>
-#include <bits/ranges_algo.h>
+#include <algorithm>
 
 #include "Algorithms/mergesort.h"
-
-float MergeSortPerf(const int arr[], const int size, const int sortedArray[]) {
-
-    int arrCopy[size];
-
-    for (int i = 0; i < size; i++) {
-        arrCopy[i] = arr[i];
-    }
-
-    std::cout << "Running Merge Sort Algorithm Performance" << std::endl;
-    std::cout << "Time Complexity : O(N log N)" << std::endl;
-    std::cout << "Space Complexity : O(N)" << std::endl;
-
-    const std::chrono::time_point start = std::chrono::system_clock::now();
-
-    mergeSort(arrCopy,0,size-1, size);
-
-    const std::chrono::time_point end = std::chrono::system_clock::now();
-
-    for (int i = 0; i < size; ++i) {
-        if (sortedArray[i] != arrCopy[i]) {
-            std::cout << "Sorting Failed !!!";
-            exit(1);
-        }
-    }
-
-    std::cout << "Run time : " << std::chrono::duration_cast<std::chrono::microseconds>(end - start) << std::endl;
-    std::cout << "Batch size : " << size << std::endl;
-
-}
-
+#include "Algorithms/algorithms.h"
 
 int main() {
     std::linear_congruential_engine<std::uint_fast32_t, 48271, 0, 2147483647> generator;
     std::uniform_int_distribution<int> distribution(0, 100);
 
-    constexpr int size = 10000;
+    constexpr int size = 100000;
     int arr[size];
     int sortedArray[size];
 
@@ -51,13 +20,20 @@ int main() {
 
     std::ranges::sort(sortedArray);
 
-    MergeSortPerf(arr, size, sortedArray);
+    // -----------------------------------------------------------------------------
+    std::cout << "Running Merge Sort Algorithm Performance" << std::endl;
+    std::cout << "Time Complexity : O(N log N)" << std::endl;
+    std::cout << "Space Complexity : O(N)" << std::endl;
 
-    for (const int & i : arr) {
-        std::cout << i << " ";
+    double averageTime = 0;
+    for (int i = 0; i < 10; i++) {
+        averageTime += MergeSortPerf(arr, size, sortedArray) / 10.;
     }
 
+    std::cout << "Average time for Merge Sort is " << averageTime << "ms for " << size << " Batch size." << std::endl;
 
-    delete[] arr;
+    // -----------------------------------------------------------------------------
+
+
     return 0;
 }
