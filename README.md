@@ -2,12 +2,11 @@
 
 This repository contains benchmark results comparing the performance of several sorting algorithms, including mergesort.
 
-## Frameworks Benchmarked
+## Algorithms Benchmarked
 
-The following frameworks and environments were tested for performance, measured by requests per second, time per request, and data transfer rate:
-
+The following algorithms were tested for performance over different batch sizes:
 - **Merge Sort**
-- 
+  
 ---
 
 ## Benchmark Results
@@ -21,8 +20,6 @@ The following frameworks and environments were tested for performance, measured 
 
 ## Summary
  
-[//]: # (![Benchmark Summary Chart](./images/summary_chart.png)
-
 ---
 
 ## License
