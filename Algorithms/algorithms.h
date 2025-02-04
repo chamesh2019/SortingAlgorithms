@@ -8,4 +8,6 @@
 
 unsigned long MergeSortPerf(const int arr[], int size, const int sortedArray[]);
 
+unsigned long InsertionSortPerf(const int arr[], int size, const int sortedArray[]);
+
 #endif //ALGORITHMS_H

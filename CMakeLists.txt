@@ -4,7 +4,9 @@ project(SimpleSortingAlgorithmBenchmark)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(SimpleSortingAlgorithmBenchmark main.cpp
-        Algorithms/mergesort.cpp
-        Algorithms/mergesort.h
+        Algorithms/MergeSort/mergesort.cpp
+        Algorithms/MergeSort/mergesort.h
         Algorithms/algorithms.cpp
-        Algorithms/algorithms.h)
+        Algorithms/algorithms.h
+        Algorithms/InsertionSort/InsertionSort.cpp
+        Algorithms/InsertionSort/InsertionSort.h)
