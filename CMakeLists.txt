@@ -9,4 +9,6 @@ add_executable(SimpleSortingAlgorithmBenchmark main.cpp
         Algorithms/algorithms.cpp
         Algorithms/algorithms.h
         Algorithms/InsertionSort/InsertionSort.cpp
-        Algorithms/InsertionSort/InsertionSort.h)
+        Algorithms/InsertionSort/InsertionSort.h
+        Algorithms/BubbleSort/BubbleSort.cpp
+        Algorithms/BubbleSort/BubbleSort.h)

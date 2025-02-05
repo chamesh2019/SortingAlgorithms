@@ -1,13 +1,14 @@
 # Sorting Algorithm Benchmark
 
-This repository contains benchmark results comparing the performance of several sorting algorithms, including mergesort.
+This repository contains benchmark results comparing the performance of several sorting algorithms, including Merge Sort, Insertion Sort, BubbleSort.
 
 ## Frameworks Benchmarked
 
-The following frameworks and environments were tested for performance, measured by requests per second, time per request, and data transfer rate:
+The following sorting algorithms were tested for performance, using 2 batch sizes:
 
 - **Merge Sort**
 - **Insertion Sort**
+- **Bubble Sort**
 ---
 
 ## Benchmark Results
@@ -16,13 +17,12 @@ The following frameworks and environments were tested for performance, measured 
 |---------------:|-------------------:|--------------------:|
 |     Merge Sort |                1ms |              35.7ms |
 | Insertion Sort |             34.9ms |            2914.4ms |
+|    Bubble Sort |            152.2ms |           35208.7ms |
 
 
 ---
 
 ## Summary
- 
-[//]: # (![Benchmark Summary Chart](./images/summary_chart.png)
 
 ---
 

@@ -36,7 +36,7 @@ int main() {
     std::cout << "Running Insertion Sort Algorithm Performance" << std::endl;
     std::cout << "Time Complexity (Best Case) : O(N)" << std::endl;
     std::cout << "Time Complexity (Worst Case) : O(N^2)" << std::endl;
-    std::cout << "Space Complexity : O(N)" << std::endl;
+    std::cout << "Space Complexity : O(1)" << std::endl;
 
     averageTime = 0;
     for (int i = 0; i < 10; i++) {
@@ -44,6 +44,19 @@ int main() {
     }
 
     std::cout << "Average time for Insertion Sort is " << averageTime << "ms for " << size << " Batch size." << std::endl << std::endl;
+
+    // -----------------------------------------------------------------------------
+
+    std::cout << "Running Bubble Sort Algorithm Performance" << std::endl;
+    std::cout << "Time Complexity : O(N^2)" << std::endl;
+    std::cout << "Space Complexity : O(1)" << std::endl;
+
+    averageTime = 0;
+    for (int i = 0; i < 10; i++) {
+        averageTime += BubbleSortPerf(arr, size, sortedArray) / 10.;
+    }
+
+    std::cout << "Average time for Bubble Sort is " << averageTime << "ms for " << size << " Batch size." << std::endl << std::endl;
 
     // -----------------------------------------------------------------------------
 
