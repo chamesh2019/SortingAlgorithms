@@ -60,6 +60,19 @@ int main() {
 
     // -----------------------------------------------------------------------------
 
+    std::cout << "Running Selection Sort Algorithm Performance" << std::endl;
+    std::cout << "Time Complexity : O(N^2)" << std::endl;
+    std::cout << "Space Complexity : O(1)" << std::endl;
+
+    averageTime = 0;
+    for (int i = 0; i < 10; i++) {
+        averageTime += BubbleSortPerf(arr, size, sortedArray) / 10.;
+    }
+
+    std::cout << "Average time for Bubble Sort is " << averageTime << "ms for " << size << " Batch size." << std::endl << std::endl;
+
+    // -----------------------------------------------------------------------------
+
 
     return 0;
 }
