@@ -10,16 +10,18 @@ The following sorting algorithms were tested for performance, using 2 batch size
 - **Insertion Sort**
 - **Bubble Sort**
 - **Selection Sort**
+- **Quick Sort**
 ---
 
 ## Benchmark Results
 
 |      Algorithm | Batch size: 10,000 | Batch size: 100,000 |
 |---------------:|-------------------:|--------------------:|
-|     Merge Sort |                1ms |              35.7ms |
+|     Merge Sort |            1.345ms |              35.7ms |
 | Insertion Sort |             34.9ms |            2514.4ms |
-|    Bubble Sort |            157.2ms |           24508.7ms |
-| Selection Sort |            161.7ms |           24321.9ms |
+|    Bubble Sort |            162.2ms |           24508.7ms |
+| Selection Sort |            157.7ms |           24321.9ms |
+|     Quick Sort |            0.942ms |               8.3ms |
 
 
 ---
