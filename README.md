@@ -4,7 +4,7 @@ This repository provides benchmark results for various sorting algorithms, inclu
 
 ## Algorithms Benchmarked
 
-The following sorting algorithms were tested for performance, using 2 batch sizes of 10,000 and 100,000 integers between 0 and 100:
+The following sorting algorithms were tested for performance, using 2 batch sizes of 10,000 and 100,000 containing integers between 0 and 10,000:
 
 - **Merge Sort**
 - **Insertion Sort**
@@ -35,15 +35,15 @@ The benchmark evaluates the performance of five sorting algorithms (Merge Sort, 
     - Achieved the fastest performance among all algorithms.
     - For 10,000 elements: 0.942ms.
     - For 100,000 elements: 8.3ms.
-    - Its \( O(n \log n) \) complexity and efficient implementation make it highly suitable for large datasets.
+    - Its O(n log n) complexity and efficient implementation make it highly suitable for large datasets.
 
 2. **Merge Sort**:
-    - Consistently fast with \( O(n \log n) \) complexity.
+    - Consistently fast with O(n log n) complexity.
     - For 10,000 elements: 1.365ms.
     - For 100,000 elements: 35.7ms.
 
 3. **Selection Sort**:
-    - Performs poorly for larger datasets due to its \( O(n^2) \) complexity.
+    - Performs poorly for larger datasets due to its O(n^2) complexity.
     - For 10,000 elements: 157.7ms.
     - For 100,000 elements: 24,321.9ms.
 
@@ -53,7 +53,7 @@ The benchmark evaluates the performance of five sorting algorithms (Merge Sort, 
     - For 100,000 elements: 24,508.7ms.
 
 5. **Insertion Sort**:
-    - Similar performance trends as Bubble Sort due to \( O(n^2) \) complexity.
+    - Similar performance trends as Bubble Sort due to O(n^2) complexity.
     - For 10,000 elements: 34.9ms.
     - For 100,000 elements: 2,514.4ms.
 
@@ -73,7 +73,3 @@ The benchmark evaluates the performance of five sorting algorithms (Merge Sort, 
 For precise comparisons, consider testing with your own use case and environment.
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
